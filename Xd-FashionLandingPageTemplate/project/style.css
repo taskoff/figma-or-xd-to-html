@@ -287,6 +287,11 @@ h1 {
   font-weight: bold;
 }
 
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -440,5 +445,69 @@ button {
   position: absolute;
   bottom: 20px;
   right: 348px;
+}
+
+.section {
+  color: #22262A;
+  max-width: 1150px;
+  margin: auto;
+  margin-bottom: 110px;
+}
+
+.section-text-wrapper {
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.section-text-wrapper h3 {
+  margin-bottom: 8px;
+}
+
+.section-products-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -webkit-column-gap: 25px;
+          column-gap: 25px;
+}
+
+.primary-card .img-wrapper {
+  margin-bottom: 16px;
+}
+
+.primary-card .ticket {
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.primary-card h4 {
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.primary-card .price {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.primary-card .price-high {
+  position: relative;
+}
+
+.primary-card .price-high::before {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 52%;
+  border-bottom: 1px solid #373737;
+}
+
+.primary-card .price-low {
+  color: #CF2929;
 }
 /*# sourceMappingURL=style.css.map */
