@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lato:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lato:wght@300;400&family=Poppins&display=swap');
+
+html {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+  }
+
+h1 {
+    font-size: 100px;
+    letter-spacing: -5px;
+}
+h2 {
+    font-size: 50px;
+    letter-spacing: 0px;
+}
+h3 {
+    font-size: 35px;
+    letter-spacing: 0px;
+}
+h4 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 400;
+}

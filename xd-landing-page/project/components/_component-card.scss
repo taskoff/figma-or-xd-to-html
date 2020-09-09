@@ -1,0 +1,44 @@
+.primary-card {
+    background-color: white;
+    min-height: 602px;
+    h2 {
+        margin: 90px 86px 0 86px;
+    }
+    .prymary-card-desc {
+        font-family: 'Poppins', sans-serif;
+        margin: 24px 86px 0 86px;
+        height: 128px;
+        opacity: 0.5;
+    }
+    .primary-button {
+        margin-left: 86px;
+    }
+
+}
+.secondary-card {
+    padding: 67px 60px 44px 60px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #CECECE;
+    &-icon {
+        width: 88px;
+        height: 88px;
+        margin: auto;
+        background-color: $primary-blue;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 27px;
+    }
+    img {
+        width: 32px;
+        height: 32px;
+    }
+    &-title {
+        margin-bottom: 20px;
+    }
+    &-desc {
+        opacity: 0.7;
+    }
+}

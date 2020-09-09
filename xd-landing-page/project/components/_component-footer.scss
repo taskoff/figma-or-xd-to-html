@@ -1,0 +1,12 @@
+.site-footer {
+    width: 100%;
+    background-color: $primary-blue;
+    padding: 58px 0;
+    text-align: center;
+    
+    &-text {
+        color: white;
+        opacity: 0.5;
+        letter-spacing: 0;
+    }
+}
