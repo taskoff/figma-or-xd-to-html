@@ -3,5 +3,12 @@
     color: white;
     text-transform: uppercase;
     padding: 8px 22px;
-    cursor: pointer;
+}
+
+.secondary-button {
+    background-color: $grey-100;
+    font-size: 18px;
+    border: none;
+    padding: 8px 26px 11px 26px;
+    color: $grey-800;
 }

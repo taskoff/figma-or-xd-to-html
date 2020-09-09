@@ -1,0 +1,27 @@
+.category-gallery {
+    max-width: 1150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 18px;
+    margin: 120px auto;
+    position: relative;
+    // padding: 120px 220px 0 220px;
+
+    .img-wrapper-first {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .img-wrapper-second {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    .secondary-button {
+        position: absolute;
+        bottom: 20px;
+        right: 348px;
+    }
+
+}

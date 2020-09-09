@@ -296,6 +296,16 @@ ul {
   list-style: none;
 }
 
+img {
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
 .site-wrapper {
   max-width: 1592px;
   margin: 0 auto;
@@ -388,6 +398,47 @@ ul {
   color: white;
   text-transform: uppercase;
   padding: 8px 22px;
-  cursor: pointer;
+}
+
+.secondary-button {
+  background-color: #FAFAFA;
+  font-size: 18px;
+  border: none;
+  padding: 8px 26px 11px 26px;
+  color: #22262A;
+}
+
+.category-gallery {
+  max-width: 1150px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  row-gap: 18px;
+  margin: 120px auto;
+  position: relative;
+}
+
+.category-gallery .img-wrapper-first {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.category-gallery .img-wrapper-second {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 5;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.category-gallery .secondary-button {
+  position: absolute;
+  bottom: 20px;
+  right: 348px;
 }
 /*# sourceMappingURL=style.css.map */
