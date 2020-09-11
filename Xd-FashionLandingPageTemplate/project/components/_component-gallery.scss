@@ -24,3 +24,48 @@
     }
 
 }
+
+.category-gallery--displaced {
+    max-width: 1150px;
+    display: grid;
+    grid-template-rows: 64px 300px 85px 215px;
+    grid-template-columns: 560px 350px 190px 50px;
+
+    .img-wrapper-first {
+        grid-row-start: 2;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        padding-right: 25px;
+    }
+    .img-wrapper-second {
+        grid-row-start: 1;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+    .img-wrapper-third {
+        grid-row-start: 3;
+        grid-row-end: 5;
+        grid-column-start: 3;
+        grid-column-end: 5;
+        padding: 20px 0 0 20px;
+        background-color: white;
+    }
+
+    img {
+        height: 100%;
+    }
+
+    .link-wrapper {
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        justify-self: end;
+        padding: 150px 0 ;
+        text-decoration: underline;
+        font-size: 15px;
+    }
+
+}
