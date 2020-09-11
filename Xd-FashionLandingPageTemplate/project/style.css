@@ -282,7 +282,8 @@ body {
   font-size: 16px;
 }
 
-h1 {
+h1,
+.h1-like {
   font-size: 80px;
   font-weight: bold;
 }
@@ -375,27 +376,6 @@ button {
   width: 20px;
   height: 20px;
   margin-left: 30px;
-}
-
-.site-header .title-section {
-  width: 100%;
-  height: 745px;
-  background-image: url("../assets/images/header-img.jpg");
-  padding-left: 60%;
-  padding-top: 436px;
-}
-
-.site-header .title-box {
-  font-size: 18px;
-  color: #22262A;
-}
-
-.site-header .title-box h1 {
-  margin: 0;
-}
-
-.site-header .title-box-buttons {
-  margin-top: 26px;
 }
 
 .primary-button {
@@ -530,6 +510,11 @@ button {
           column-gap: 25px;
 }
 
+.section-footer-img {
+  max-width: 100%;
+  margin-bottom: 0;
+}
+
 .primary-card .img-wrapper {
   margin-bottom: 16px;
 }
@@ -567,5 +552,35 @@ button {
 
 .primary-card .price-low {
   color: #CF2929;
+}
+
+.title-section {
+  max-width: 100%;
+  height: 745px;
+}
+
+.title-section.first {
+  background-image: url("../assets/images/header-img.jpg");
+  padding-left: 60%;
+  padding-top: 436px;
+}
+
+.title-section.second {
+  background-image: url("../assets/images/footer-img.jpg");
+  padding-left: 15%;
+  padding-top: 436px;
+}
+
+.title-box {
+  font-size: 18px;
+  color: #22262A;
+}
+
+.title-box h1 {
+  margin: 0;
+}
+
+.title-box-buttons {
+  margin-top: 26px;
 }
 /*# sourceMappingURL=style.css.map */
