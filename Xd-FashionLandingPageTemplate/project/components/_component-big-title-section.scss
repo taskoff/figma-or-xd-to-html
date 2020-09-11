@@ -5,11 +5,13 @@
 
     &.first {
         background-image: url('../assets/images/header-img.jpg');
+        background-size: cover;
         padding-left: 60%;
         padding-top: 436px;
     }
     &.second {
         background-image: url('../assets/images/footer-img.jpg');
+        background-size: cover;
         padding-left: 15%;
         padding-top: 436px;
     }

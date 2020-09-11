@@ -19,14 +19,13 @@
         column-gap: 25px;
     }
 
-    &-footer {
-        &-img {
-            max-width: 100%;
-            margin-bottom: 0;
-        }
-        
-    }
+    
 
 
 
+}
+.full-width-section-wrapper {
+    width: 100%;
+    padding: 110px 0;
+    background-color: $blue-100;
 }

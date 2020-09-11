@@ -1,5 +1,12 @@
 .site-wrapper {
-    max-width: 1592px;
-    margin: 0 auto;
+    // max-width: 1500px;
+    // margin: 0 auto;
     border: 2px solid #CECECE;
+}
+.full-width-section-wrapper {
+    width: 100%;
+    &.footer-info {
+        padding: 110px 0;
+        background-color: $blue-100;
+    }
 }
