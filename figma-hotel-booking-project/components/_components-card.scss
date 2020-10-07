@@ -1,0 +1,43 @@
+.card {
+    background-color: $blue-800;
+    color: $white-100;
+    border-radius: 8px;
+    font-size: 10px;
+    &--no-image {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        padding: 30px;
+        .card-text {
+            display: flex;
+            justify-content: space-between;
+            p {
+                line-height: 1.2em;
+            }
+            p.price {
+                font-size: 24px;
+                font-weight: 800;
+            }
+            p.quick {
+                font-size: 18px;
+                margin-top: 10px;
+            }
+            span {
+                margin-left: 10px;
+            }
+            .second-column {
+                i {
+                    font-size: 14px;
+                }
+                p {
+                    margin-bottom: 10px;
+                }
+                p.phone{
+                    margin-top: 25px;
+                    span.phone-num {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
