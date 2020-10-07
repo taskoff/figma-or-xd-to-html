@@ -1,0 +1,129 @@
+.top-navi {
+    height: 60px;
+    font-size: 10px;
+    &-list {
+        height: 100%;
+        display: flex;
+        list-style: none;
+        align-items: center;
+        justify-content: space-between;
+
+        :first-child {
+            flex-grow: 2;
+        }
+
+        .gift {
+            margin-right: 98px;
+
+            &-text {
+                margin-left: 20px;
+            }
+        }
+
+        .loyal {
+
+            &-text {
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+.middle-navi {
+    height: 120px;
+    background-color: white;
+
+    &-list {
+        display: flex;
+        // justify-content: space-between;
+    }
+    .site-logo-wrapper {
+        margin-right: 108px;
+        .site-logo {
+            font-family: 'Luckiest Guy', cursive;
+            font-size: 24px;
+
+            span {
+                color: $red-500;
+            }
+        }
+    }
+
+    .search-wrapper {
+        justify-content: start;
+        margin-right: 230px;
+        input {
+            width: 285px;
+            line-height: 40px;
+            border: none;
+        }
+        .search-btn {
+            width: 65px;
+            height: 40px;
+            background-color: $red-500;
+            border: none;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            color: white;
+            outline: none;
+        }
+
+    }
+
+    .basket-wrapper {
+        justify-content: start;
+        position: relative;
+        margin-right: 70px;;
+        .dot-wrapper {
+            display: flex;
+            justify-content: space-between;
+            width: 60%;
+            margin-left: 30%;
+
+            .dot {
+                width: 4px;
+                height: 4px;
+                background-color: black;
+                border-radius: 50%;
+            }
+        }
+
+        .counter {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: $red-500;
+            font-size: 10px;
+            color: white;
+        }
+
+
+    }
+
+    .profile-wrapper {
+        justify-content: space-between;
+        
+        .img-container {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 25px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .menu {
+            .name {
+                margin-right: 24px;
+            }
+        }
+    }
+
+}
