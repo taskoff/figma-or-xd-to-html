@@ -10,60 +10,112 @@
 
 .current-hotel-section {
 
-    
-    
-    .hotel-info {
-        // display: flex;
-        // justify-content: space-between;
-        padding-top: 25px;
-        .stars-wrapper {
-            
-            .stars-list {
-                justify-content: start;
-                li {
-                    margin-right: 5px;
+    .hotel-description {
+        .hotel-info {
+            // display: flex;
+            // justify-content: space-between;
+            padding-top: 25px;
+            .stars-wrapper {
+                
+                .stars-list {
+                    justify-content: start;
+                    li {
+                        margin-right: 5px;
+                    }
                 }
             }
-        }
-        .title-wrapper {
-            justify-content: start;
-            .hotel-title {
-                margin-top: 5px;
-                font-size: 24px;
-                color: $grey-500;
-                margin-right: 25px;
+            .title-wrapper {
+                justify-content: start;
+                .hotel-title {
+                    margin-top: 5px;
+                    font-size: 24px;
+                    color: $grey-500;
+                    margin-right: 25px;
+                }
+                .offer-btn {
+                    padding: 4px 8px;
+                    border-radius: 3px;
+                    font-size: 10px;
+                }
+    
             }
-            .offer-btn {
-                padding: 4px 8px;
-                border-radius: 3px;
-                font-size: 10px;
+            .hotel-under-title {
+                font-size: 12px;
             }
-
         }
-        .hotel-under-title {
-            font-size: 12px;
+    
+        .img-and-booking {
+            padding-top: 20px;
+            display: grid;
+            grid-template-columns: 730px 1fr;
+            column-gap: 30px;
+        }
+        .img-wrapper {
+                width: 730px;
+                height: 450px;
+                border-radius: 8px;
+                overflow: hidden;
+                position: relative;
+                
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: #007ADF;
+                    z-index: 1;
+                    opacity: 0.2;
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+        }
+        
+        .booking-and-map {
+                display: grid;
+                grid-template-rows: 210px 210px;
+                row-gap: 30px;
+                
         }
     }
-    .article-wrapper {
-        padding-top: 20px;
-        display: grid;
-        grid-template-columns: 730px 1fr;
-        column-gap: 30px;
-        .img-wrapper {
-            width: 730px;
-            height: 450px;
-            border-radius: 8px;
-            overflow: hidden;
-            img {
-                width: 100%;
-                height: 100%;
+    
+    .package-area {
+        &-header {
+            &-navi {
+                padding: 68px 0;
+                &-menu {
+                    justify-content: space-between;
+                    font-weight: 700;
+                    li.active {
+                        position: relative;
+                        a{
+                           color: $red-500;
+                        }
+                        &::before {
+                            content: '';
+                            width: 100%;
+                            border: 2px solid $red-500;
+                            position: absolute;
+                            top: 200%;
+                            left: 0;
+                        }
+                    }
+                }
+            }
+            h3 {
+                text-transform: uppercase;
             }
         }
-        .booking-and-map {
+        .packages-wrapper {
+            padding-top: 30px;
             display: grid;
-            grid-template-rows: 210px 210px;
+            grid-template-columns: 50% 50%;
+            column-gap: 30px;
+            grid-template-rows: min-content 1fr;
             row-gap: 30px;
-            
         }
     }
 }
