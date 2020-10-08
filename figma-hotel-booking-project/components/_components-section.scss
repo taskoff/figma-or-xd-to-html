@@ -116,3 +116,20 @@
         }
     }
 }
+
+.other-packs {
+    margin-top: 65px;
+    
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
+        padding: 45px 0 65px 0;
+    }
+
+    &-cards-wrapper {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        column-gap: 30px;
+        row-gap: 30px;
+    }
+}

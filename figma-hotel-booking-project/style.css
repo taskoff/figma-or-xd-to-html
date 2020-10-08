@@ -280,14 +280,20 @@ body {
   font-size: 14px;
 }
 
-h3 {
-  font-size: 24px;
+h2, h3, h4 {
   font-weight: 700;
 }
 
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
 h4 {
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 18px;
 }
 
 h5 {
@@ -622,6 +628,26 @@ ul {
   row-gap: 30px;
 }
 
+.other-packs {
+  margin-top: 65px;
+}
+
+.other-packs h2 {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 45px 0 65px 0;
+}
+
+.other-packs-cards-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 33% 33% 33%;
+      grid-template-columns: 33% 33% 33%;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  row-gap: 30px;
+}
+
 .button {
   background-color: #EC1F46;
   color: #ffff;
@@ -690,6 +716,63 @@ ul {
   font-size: 18px;
 }
 
+.card--with-img .img-wrapper {
+  height: 250px;
+  overflow: hidden;
+}
+
+.card--with-img .img-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+
+.card--with-img .info-wrapper {
+  height: 250px;
+  padding: 30px;
+  font-size: 12px;
+}
+
+.card--with-img .info-wrapper .card-main {
+  margin: 20px 10px;
+}
+
+.card--with-img .info-wrapper .card-main li {
+  margin-bottom: 15px;
+}
+
+.card--with-img .info-wrapper .card-main li .icon {
+  position: relative;
+  margin-right: 15px;
+}
+
+.card--with-img .info-wrapper .card-main li .icon.position svg {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.card--with-img .info-wrapper .card-main li .icon.person span {
+  position: absolute;
+}
+
+.card--with-img .info-wrapper .card-main li .icon.person span.first {
+  top: -5px;
+  left: -3px;
+}
+
+.card--with-img .info-wrapper .card-main li .icon.person span.second {
+  top: 2px;
+  left: -6px;
+}
+
+.card--with-img .info-wrapper .card-main li .icon.house svg {
+  position: absolute;
+  top: -1px;
+  left: -6px;
+}
+
 .white-card-header {
   color: #ffff;
   height: 50px;
@@ -699,6 +782,10 @@ ul {
   background-color: #0A223D;
   padding: 16px 25px;
   border-radius: 4px 4px 0px 0px;
+}
+
+.white-card-header h4 {
+  font-size: 14px;
 }
 
 .white-card--small-main {
