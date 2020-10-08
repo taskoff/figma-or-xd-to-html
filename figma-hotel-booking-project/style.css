@@ -658,6 +658,11 @@ ul {
   padding: 15px 85px;
 }
 
+.button--primary {
+  padding: 10px 28px;
+  border-radius: 4px;
+}
+
 .card {
   background-color: #0A223D;
   color: #ffff;
@@ -716,6 +721,20 @@ ul {
   font-size: 18px;
 }
 
+.card--with-img {
+  position: relative;
+}
+
+.card--with-img .flash-offer {
+  position: absolute;
+  background-color: #EC1F46;
+  color: #ffff;
+  top: 25px;
+  left: 0;
+  padding: 5px 10px;
+  border-radius: 0px 4px 4px 0px;
+}
+
 .card--with-img .img-wrapper {
   height: 250px;
   overflow: hidden;
@@ -771,6 +790,40 @@ ul {
   position: absolute;
   top: -1px;
   left: -6px;
+}
+
+.card--with-img .info-wrapper .card-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 37px;
+}
+
+.card--with-img .info-wrapper .card-footer .price-old {
+  margin-bottom: 5px;
+  position: relative;
+  font-size: 14px;
+}
+
+.card--with-img .info-wrapper .card-footer .price-old::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 60%;
+  border-bottom: 1px solid #ffff;
+}
+
+.card--with-img .info-wrapper .card-footer .price-new {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.card--with-img .info-wrapper .card-footer .btn-wrapper {
+  margin-top: 10px;
 }
 
 .white-card-header {
