@@ -91,9 +91,16 @@
             display: block;
             margin-top: 40px;
         }
+        p.text.custom {
+            // line-height: 1.5em;
+            span {
+                display: block;
+                margin-bottom: 5px;
+            }
+        }
     }
     &-icon {
-        background-color: $grey-500;
+         background-color: $grey-500;
         width: 15px;
         height: 15px;
         border-radius: 50%;

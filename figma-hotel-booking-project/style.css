@@ -518,10 +518,9 @@ ul {
 }
 
 .current-hotel-section .hotel-description .hotel-info .title-wrapper .hotel-title {
-  margin-top: 5px;
+  margin: 5px 25px 3px 0;
   font-size: 24px;
   color: #333333;
-  margin-right: 25px;
 }
 
 .current-hotel-section .hotel-description .hotel-info .title-wrapper .offer-btn {
@@ -755,6 +754,11 @@ ul {
 .white-card-li span.bottom-text {
   display: block;
   margin-top: 40px;
+}
+
+.white-card-li p.text.custom span {
+  display: block;
+  margin-bottom: 5px;
 }
 
 .white-card-icon {

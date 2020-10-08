@@ -12,8 +12,6 @@
 
     .hotel-description {
         .hotel-info {
-            // display: flex;
-            // justify-content: space-between;
             padding-top: 25px;
             .stars-wrapper {
                 
@@ -27,10 +25,9 @@
             .title-wrapper {
                 justify-content: start;
                 .hotel-title {
-                    margin-top: 5px;
+                    margin: 5px 25px 3px 0;
                     font-size: 24px;
                     color: $grey-500;
-                    margin-right: 25px;
                 }
                 .offer-btn {
                     padding: 4px 8px;
