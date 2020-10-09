@@ -13,15 +13,7 @@
     .hotel-description {
         .hotel-info {
             padding-top: 25px;
-            .stars-wrapper {
-                
-                .stars-list {
-                    justify-content: start;
-                    li {
-                        margin-right: 5px;
-                    }
-                }
-            }
+          
             .title-wrapper {
                 justify-content: start;
                 .hotel-title {
@@ -132,4 +124,114 @@
         column-gap: 30px;
         row-gap: 30px;
     }
+}
+
+.fourth-section {
+    margin-top: 70px;
+
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
+        padding-top: 40px;
+        margin-bottom: 70px;
+    }
+    .slider-wrapper {
+        font-size: 12px;
+        text-align: center;
+        position: relative;
+        .slider-content {
+            margin: 0 355px;
+        }
+
+        .img-wrapper {
+            margin-bottom: 10px;
+        }
+        p.name {
+            color: $red-500;
+            font-weight: 700;
+            
+            margin-bottom: 10px;
+        }
+        .stars-list {
+            justify-content: center;
+        }
+        p.message {
+            padding: 30px 90px 0 90px;
+            text-align: justify;
+            line-height: 19px;
+        }
+        .left-arrow,
+        .right-arrow {
+            position: absolute;
+        }
+        .left-arrow {
+            left: 193px;
+            top: 50%;
+        }
+        .right-arrow {
+            right: 193px;
+            top: 50%;
+        }
+    }
+
+    .subscribe-news {
+        .article-wrapper {
+            margin-top: 100px;
+            background-image: url('../assets/img/bg-news.png');
+            background-size: cover;
+            background-position: center; 
+            background-repeat: no-repeat;
+            height: 260px;
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #0A223D;
+                opacity: 0.8;
+            }
+        }
+        .subscribe-wrapper {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 10px;
+
+            .text-text {
+                margin-right: 170px;
+                color: $white-100;
+                .first-row {
+                    font-size: 24px;
+                }
+                .second-row {
+                    font-size: 36px;
+                    text-transform: uppercase;
+                }
+            }
+            .search-wrapper {
+                margin: 0;
+                input {
+                    width: 285px;
+                    line-height: 55px;
+                    outline: none;
+                    border: none;
+                    border-radius: 4px 0 0 4px;
+                }
+                .search-btn {
+                    width: 65px;
+                    height: 55px;
+                    border-radius: 0 4px 4px 0;
+                    // margin-left: -5px;
+                }
+            }
+
+        }
+    }
+
+    
+
 }

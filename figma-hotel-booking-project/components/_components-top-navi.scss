@@ -49,29 +49,6 @@
         }
     }
 
-    .search-wrapper {
-        justify-content: start;
-        margin-right: 220px;
-        input {
-            width: 285px;
-            line-height: 40px;
-            border: none;
-        }
-        .search-btn {
-            width: 65px;
-            height: 40px;
-            background-color: $red-500;
-            border: none;
-            border-top-right-radius: 5px;
-            border-bottom-right-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-            color: white;
-            outline: none;
-        }
-
-    }
-
     .basket-wrapper {
         justify-content: start;
         position: relative;
