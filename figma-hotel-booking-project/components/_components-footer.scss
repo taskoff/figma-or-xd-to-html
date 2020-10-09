@@ -1,0 +1,13 @@
+.site-footer-wrapper {
+    min-height: 900px;
+    background-color: $blue-800;
+    color: $white-100;
+    a {
+        color: $white-100;
+    }
+
+    .first-part {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
