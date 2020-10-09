@@ -331,6 +331,12 @@ ul {
   list-style: none;
 }
 
+input,
+textarea {
+  border: none;
+  outline: none;
+}
+
 .top-navi {
   height: 60px;
   font-size: 10px;
@@ -812,6 +818,7 @@ ul {
   background-color: #EC1F46;
   color: #ffff;
   border: none;
+  cursor: pointer;
 }
 
 .button--big {
@@ -978,6 +985,7 @@ ul {
 
 .card .card-main {
   margin: 20px 10px;
+  opacity: 0.8;
 }
 
 .card .card-main li {
@@ -1031,6 +1039,7 @@ ul {
   margin-bottom: 7px;
   position: relative;
   font-size: 14px;
+  opacity: 0.8;
 }
 
 .card .card-footer .price-old::before {
@@ -1175,19 +1184,157 @@ ul {
 }
 
 .site-footer-wrapper {
-  min-height: 900px;
   background-color: #0A223D;
   color: #ffff;
+  font-size: 12px;
+  position: relative;
 }
 
-.site-footer-wrapper a {
+.site-footer-wrapper a,
+.site-footer-wrapper .link {
   color: #ffff;
+  font-size: 12px;
+  opacity: 0.8;
+  line-height: 28px;
 }
 
-.site-footer-wrapper .first-part {
+.site-footer-wrapper .footer {
+  padding-top: 110px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  row-gap: 100px;
+}
+
+.site-footer-wrapper .footer .footer-menu li a {
+  line-height: 23px;
+  opacity: 0.8;
+}
+
+.site-footer-wrapper .footer h4 {
+  padding-bottom: 25px;
+}
+
+.site-footer-wrapper .footer .first-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.site-footer-wrapper .footer .first-part .site-logo {
+  max-width: 160px;
+  font-size: 64px;
+  font-weight: 400;
+  font-family: 'Luckiest Guy', cursive;
+  line-height: 1.0em;
+  margin-right: 120px;
+  padding-top: 20px;
+}
+
+.site-footer-wrapper .footer .first-part .site-logo span {
+  color: #EC1F46;
+}
+
+.site-footer-wrapper .footer .second-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.site-footer-wrapper .footer .second-part .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 25px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.site-footer-wrapper .footer .second-part .social p {
+  font-size: 18px;
+  font-weight: 700;
+  margin-right: 40px;
+}
+
+.site-footer-wrapper .footer .second-part .social .icon-wrapper a {
+  margin-right: 10px;
+}
+
+.site-footer-wrapper .footer .third-part ul {
+  margin-top: 20px;
+}
+
+.site-footer-wrapper .footer .third-part ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.site-footer-wrapper .footer .third-part ul li span {
+  margin-right: 20px;
+}
+
+.site-footer-wrapper .footer .fourth-part .input-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  row-gap: 15px;
+}
+
+.site-footer-wrapper .footer .fourth-part .input-wrapper input {
+  line-height: 50px;
+  border-radius: 4px;
+  padding-left: 20px;
+}
+
+.site-footer-wrapper .footer .fourth-part .input-wrapper textarea {
+  padding: 20px;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  height: 120px;
+  border-radius: 4px;
+}
+
+.site-footer-wrapper .footer .fourth-part .button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.site-footer-wrapper .footer .fourth-part .button-wrapper .button {
+  padding: 18px 65px;
+  border-radius: 4px;
+}
+
+.site-footer-wrapper .bootom-footer {
+  margin-top: 100px;
+  padding-bottom: 45px;
+}
+
+.site-footer-wrapper .bootom-footer li {
+  margin-right: 10px;
+}
+
+.site-footer-wrapper .money-icons-wrapper {
+  position: absolute;
+  right: 165px;
+  bottom: 45px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,13 +1,124 @@
 .site-footer-wrapper {
-    min-height: 900px;
+    // min-height: 900px;
     background-color: $blue-800;
     color: $white-100;
-    a {
+    font-size: 12px;
+    position: relative;
+    a,
+    .link {
         color: $white-100;
+        font-size: 12px;
+        opacity: 0.8;
+        line-height: 28px;
     }
-
-    .first-part {
+    .footer {
+        .footer-menu {
+            li a{
+                    line-height: 23px;
+                    opacity: 0.8;
+            }
+        }
+        h4 {
+            padding-bottom: 25px;
+        }
+        padding-top: 110px;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 50% 50%;
+        row-gap: 100px;
+        .first-part {
+            display: flex;
+           
+            .site-logo {
+                max-width: 160px;
+                font-size: 64px;
+                font-weight: 400;
+                font-family: 'Luckiest Guy', cursive;
+                line-height: 1.0em;
+                margin-right: 120px;
+                padding-top: 20px;
+                span {
+                    color: $red-500;
+                }
+            }
+            
+        }
+        .second-part {
+            display: flex;
+            justify-content: space-between;
+
+            .social {
+                display: flex;
+                padding-top: 25px;
+                justify-content: start;
+                p {
+                    font-size: 18px;
+                    font-weight: 700;
+                    margin-right: 40px;
+                }
+                .icon-wrapper {
+
+                    a {
+                        margin-right: 10px;
+
+                    }
+                }
+            }
+        }
+        .third-part {
+            ul {
+                margin-top: 20px;
+                li {
+                    display: flex;
+                    margin-bottom: 20px;
+                    span {
+                        margin-right: 20px;
+                    };
+                }
+            }
+        }
+        .fourth-part {
+            .input-wrapper {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 30px;
+                row-gap: 15px;
+                input {
+                    line-height: 50px;
+                    border-radius: 4px;
+                    padding-left: 20px;
+                }
+                textarea {
+                    padding: 20px;
+                    grid-column-start: 1;
+                    grid-column-end: 3;
+                    height: 120px;
+                    border-radius: 4px;
+                }
+            }
+            .button-wrapper {
+                display: flex;
+                justify-content: space-between;
+                padding-top: 20px;
+                align-items: center;
+
+                .button {
+                    padding: 18px 65px;
+                    border-radius: 4px;
+                }
+            }
+        }
+
+    }
+    .bootom-footer {
+        margin-top: 100px;
+        padding-bottom: 45px;
+        li {
+            margin-right: 10px;
+        }
+    }
+    .money-icons-wrapper {
+        position: absolute;
+        right: 165px;
+        bottom: 45px;
     }
 }
