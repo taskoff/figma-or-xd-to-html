@@ -36,12 +36,17 @@
         .img-and-booking {
             padding-top: 20px;
             display: grid;
-            grid-template-columns: 730px 1fr;
             column-gap: 30px;
+            @include md {
+                grid-template-columns: 1fr;
+            }
+            @include lg {
+                grid-template-columns: 730px 1fr;
+            }
         }
         .img-wrapper {
-                width: 730px;
-                height: 450px;
+                width: 100%;
+                height: 100%;
                 border-radius: 8px;
                 overflow: hidden;
                 position: relative;
@@ -64,9 +69,29 @@
         }
         
         .booking-and-map {
+            
+            iframe {
+                width: 100%;
+                height: 100%;
+            }
+
+            @include sm {
+                margin-top: 20px;
+                display: flex;
+                justify-content: space-between;                   
+           }
+        //     @include md {
+        //         margin-top: 20px;
+        //         display: flex;
+        //         justify-content: space-between;                
+        //    }
+            @include lg {
                 display: grid;
                 grid-template-rows: 210px 210px;
                 row-gap: 30px;
+                column-gap: 30px;
+            }
+
                 
         }
     }

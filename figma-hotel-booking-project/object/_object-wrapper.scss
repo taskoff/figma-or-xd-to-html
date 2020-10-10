@@ -1,5 +1,11 @@
 .section-wrapper {
-    margin: 0 165px;
+    @include lg {
+        margin: 0 165px;
+    }
+    margin: 0 20px;
+    
+    
+
 }
 
 .center {
