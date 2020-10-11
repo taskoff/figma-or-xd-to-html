@@ -81,6 +81,11 @@
             height: 250px;
             padding: 30px;
             font-size: 12px;
+            @include sm {
+                font-size: 10px;
+                padding: 5px;
+                height: 220px;
+            }
         }
     }
     &--big {
@@ -214,6 +219,9 @@
     &--small{
         &-main {
             padding: 30px;
+            @include sm {
+                padding: 10px;
+            }
             display: flex;
             justify-content: space-between;
             ul {
@@ -227,6 +235,9 @@
         grid-column-end: 3;
         &-main{
             padding: 30px;
+            @include sm {
+                padding: 10px;
+            }
             display: grid;
             grid-template-columns: 33% 33% 33%;
             grid-template-rows: min-content min-content;
@@ -264,6 +275,9 @@
         height: 15px;
         border-radius: 50%;
         margin-right: 30px;
+        @include sm {
+            margin-right: 10px;
+        }
         &.basket {
             background-color: transparent;
         }

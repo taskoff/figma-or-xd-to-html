@@ -1,9 +1,20 @@
 .section-wrapper {
-    @include lg {
-        margin: 0 165px;
-    }
-    margin: 0 20px;
+    margin: 0 165px;
     
+    
+    @include xl {
+        margin: 0 50px;
+    }
+    @include lg {
+        // margin: 0 150px;
+    }
+    @include md {
+        margin: 0 20px;
+    }
+    
+    @include sm {
+        margin: 0 5px;
+    }
     
 
 }

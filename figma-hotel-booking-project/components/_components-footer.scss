@@ -24,6 +24,10 @@
         padding-top: 110px;
         display: grid;
         grid-template-columns: 50% 50%;
+        @include md {
+            grid-template-columns: 1fr;
+            margin: 0 130px;
+        }
         row-gap: 100px;
         .first-part {
             display: flex;
@@ -80,6 +84,7 @@
             .input-wrapper {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
+                
                 column-gap: 30px;
                 row-gap: 15px;
                 input {
@@ -120,5 +125,9 @@
         position: absolute;
         right: 165px;
         bottom: 45px;
+        @include md {
+            left: 40%;
+            bottom: 20px;
+        }
     }
 }
