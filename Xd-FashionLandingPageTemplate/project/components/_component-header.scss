@@ -5,7 +5,11 @@
         grid-template-columns: 1fr 1fr 1fr;
         // max-width: 1240px;
         margin: 23px 130px 22px 222px;
-
+        @include sm {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px;
+        }
         
 
         .primary-navigation {
@@ -20,6 +24,10 @@
 
             li {
                 margin-right: 10px;
+            }
+
+            @include sm {
+                display: none;
             }
         }
         

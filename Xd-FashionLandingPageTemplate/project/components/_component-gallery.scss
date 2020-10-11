@@ -21,6 +21,11 @@
         position: absolute;
         bottom: 20px;
         right: 348px;
+         @include sm {
+             right: 20px;
+             padding: 5px 10px;
+             font-size: 12px;
+         }
     }
 
 }
@@ -30,6 +35,8 @@
     display: grid;
     grid-template-rows: 64px 300px 85px 215px;
     grid-template-columns: 560px 350px 190px 50px;
+
+    
 
     .img-wrapper-first {
         grid-row-start: 2;
@@ -66,6 +73,34 @@
         padding: 150px 0 ;
         text-decoration: underline;
         font-size: 15px;
+    }
+
+    @include sm {
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: unset;
+        position: relative;
+        .link-wrapper {
+            position: absolute;
+            bottom: -40px;
+            left: 20px;
+            
+        }
+        .link-wrapper,
+        .img-wrapper {
+            &-first,
+            &-second, 
+            &-third {
+                grid-row-start: unset;
+                grid-row-end: unset;
+                grid-column-start: unset;
+                grid-column-end: unset;
+                margin: 0;
+                padding: 0;
+                
+            }
+           
+        }
+        
     }
 
 }

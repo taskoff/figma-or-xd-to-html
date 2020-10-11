@@ -1,19 +1,24 @@
 .title-section {
-    max-width: 100%;
+    width: 100%;
     height: 745px;
+    // height: ;
     
 
     &.first {
         background-image: url('../assets/images/header-img.jpg');
         background-size: cover;
+        background-repeat: no-repeat;
         padding-left: 60%;
-        padding-top: 436px;
+        padding-top: 30%;
     }
     &.second {
-        background-image: url('../assets/images/footer-img.jpg');
-        background-size: cover;
+        width: 100%;
         padding-left: 15%;
-        padding-top: 436px;
+        padding-top: 25%;
+    }
+
+    @include sm {
+        height: 100%;
     }
 }
 
@@ -25,6 +30,17 @@
     }
     &-buttons {
         margin-top: 26px;
+    }
+
+    @include sm {
+        font-size: 16px;
+        h1, .h1-like {
+            font-size: 20px;
+        }
+        &-buttons {
+            margin-top: 0;
+        }
+
     }
     
 }

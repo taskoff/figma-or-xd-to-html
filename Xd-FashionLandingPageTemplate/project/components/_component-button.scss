@@ -3,6 +3,11 @@
     color: white;
     text-transform: uppercase;
     padding: 8px 22px;
+
+    @include sm {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
 }
 
 .secondary-button {

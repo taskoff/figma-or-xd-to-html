@@ -333,6 +333,18 @@ button {
   margin: 23px 130px 22px 222px;
 }
 
+@media (max-width: 600px) {
+  .site-header-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 10px;
+  }
+}
+
 .site-header-nav .primary-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -350,6 +362,12 @@ button {
 
 .site-header-nav .primary-navigation li {
   margin-right: 10px;
+}
+
+@media (max-width: 600px) {
+  .site-header-nav .primary-navigation {
+    display: none;
+  }
 }
 
 .site-logo {
@@ -403,6 +421,13 @@ button {
   padding: 8px 22px;
 }
 
+@media (max-width: 600px) {
+  .primary-button {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+}
+
 .secondary-button {
   background-color: #FAFAFA;
   font-size: 18px;
@@ -443,6 +468,14 @@ button {
   position: absolute;
   bottom: 20px;
   right: 348px;
+}
+
+@media (max-width: 600px) {
+  .category-gallery .secondary-button {
+    right: 20px;
+    padding: 5px 10px;
+    font-size: 12px;
+  }
 }
 
 .category-gallery--displaced {
@@ -503,6 +536,34 @@ button {
   font-size: 15px;
 }
 
+@media (max-width: 600px) {
+  .category-gallery--displaced {
+    -ms-grid-columns: 33% 33% 33%;
+        grid-template-columns: 33% 33% 33%;
+    -ms-grid-rows: unset;
+        grid-template-rows: unset;
+    position: relative;
+  }
+  .category-gallery--displaced .link-wrapper {
+    position: absolute;
+    bottom: -40px;
+    left: 20px;
+  }
+  .category-gallery--displaced .link-wrapper-first, .category-gallery--displaced .link-wrapper-second, .category-gallery--displaced .link-wrapper-third,
+  .category-gallery--displaced .img-wrapper-first,
+  .category-gallery--displaced .img-wrapper-second,
+  .category-gallery--displaced .img-wrapper-third {
+    -ms-grid-row: unset;
+        grid-row-start: unset;
+    grid-row-end: unset;
+    -ms-grid-column: unset;
+        grid-column-start: unset;
+    grid-column-end: unset;
+    margin: 0;
+    padding: 0;
+  }
+}
+
 .section {
   color: #22262A;
   max-width: 1150px;
@@ -526,6 +587,13 @@ button {
       grid-template-columns: 1fr 1fr 1fr 1fr;
   -webkit-column-gap: 25px;
           column-gap: 25px;
+}
+
+@media (max-width: 600px) {
+  .section-products-wrapper {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
 }
 
 .full-width-section-wrapper {
@@ -574,22 +642,28 @@ button {
 }
 
 .title-section {
-  max-width: 100%;
+  width: 100%;
   height: 745px;
 }
 
 .title-section.first {
   background-image: url("../assets/images/header-img.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   padding-left: 60%;
-  padding-top: 436px;
+  padding-top: 30%;
 }
 
 .title-section.second {
-  background-image: url("../assets/images/footer-img.jpg");
-  background-size: cover;
+  width: 100%;
   padding-left: 15%;
-  padding-top: 436px;
+  padding-top: 25%;
+}
+
+@media (max-width: 600px) {
+  .title-section {
+    height: 100%;
+  }
 }
 
 .title-box {
@@ -605,9 +679,25 @@ button {
   margin-top: 26px;
 }
 
+@media (max-width: 600px) {
+  .title-box {
+    font-size: 16px;
+  }
+  .title-box h1, .title-box .h1-like {
+    font-size: 20px;
+  }
+  .title-box-buttons {
+    margin-top: 0;
+  }
+}
+
 .section-footer-img {
-  max-width: 100%;
+  min-width: 100%;
+  height: auto;
   margin-bottom: 0;
+  background-image: url("../assets/images/footer-img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .section-footer-menus {
@@ -706,6 +796,22 @@ button {
   margin-bottom: 15px;
 }
 
+@media (max-width: 600px) {
+  .section-footer-menus {
+    display: block;
+  }
+  .section-footer-menus .logo-text,
+  .section-footer-menus .email-input,
+  .section-footer-menus .info-wrapper {
+    padding-bottom: 50px;
+    padding-top: 20px;
+    border-bottom: 1px solid grey;
+  }
+  .section-footer-menus .footer-menus {
+    padding-top: 20px;
+  }
+}
+
 .bottom-footer {
   background-color: #E7F5F8;
   font-size: 20px;
@@ -713,5 +819,11 @@ button {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   padding: 25px 0 30px 0;
+}
+
+@media (max-width: 600px) {
+  .bottom-footer {
+    font-size: 12px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
