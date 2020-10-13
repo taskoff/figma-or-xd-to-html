@@ -1,0 +1,279 @@
+section.educations {
+    margin: 65px 150px 60px 150px;
+    @include md{
+        margin: 30px;
+    }
+    
+    .education-box{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 130px;
+        @include md {
+            display: block;
+        }
+
+        .img-wrapper {
+            max-width: 570px;
+            max-height: 100%;
+            overflow: hidden;
+            @include md {
+                max-width: 100%;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .card-education {
+            padding-top: 70px;
+            max-width: 450px;
+            @include xl {
+                padding-top: 30px;
+            }
+            @include lg {
+                padding-top: 0;
+            }
+            @include md {
+                display: grid;
+                grid-template-columns: 60% 40%;
+                max-width: 100%;
+            }
+            h3 {
+                font-size: 36px;
+                padding-bottom: 20px;
+                @include lg {
+                    padding-bottom: 10px;
+                }
+            }
+            .description {
+                font-size: 18px;
+                letter-spacing: 0;
+                @include xl {
+                    font-size: 12px;
+                }
+
+            }
+            ul {
+                padding: 0;
+                li.h3 {
+                    margin-top: 45px;
+                    font-size: 30px;  
+                    font-weight: 700;
+
+                    @include xl {
+                        margin-top: 10px;
+                        font-size: 20px;
+                    }
+                    @include lg {
+                        margin-top: 5px;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+section.features {
+    background-color: #F1F1F1;
+    padding-bottom: 80px;
+    h2 {
+        text-align: center;
+        padding-top: 65px;
+    }
+    .card-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 30px;
+        row-gap: 60px;
+        margin-top: 45px;
+        @include lg {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .card-features {
+            text-align: center;
+            .icon-wrapper {
+                background-color: #ffff;
+                width: 170px;
+                height: 170px;
+                border-radius: 50%;
+                margin: auto;
+            }
+            h3 {
+                margin-top: 12px;
+            }
+            .description {
+                font-size: 18px;
+                padding: 0 30px;
+            }
+        }
+    }
+}
+
+section.courses {
+    h2 {
+        text-align: center;
+        padding-top: 65px;
+        margin-bottom: 40px;
+    }
+    .card-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 30px;
+
+
+        @include lg {
+            column-gap: 10px;
+        }
+        @include md {
+            grid-template-columns: 1fr;
+        }
+        
+        .card-course {
+            background-color: #F1F1F1;
+            .img-wrapper {
+                max-width: 100%;
+                height: auto;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .text {
+                padding: 30px;
+                h3 {
+                    margin-bottom: 25px;
+                    font-size: 30px;
+                }
+                .description::after,
+                .time::after,
+                .teacher::after {
+                    display: block;
+                    content: '';
+                    height: 3px;
+                    background-color: #CFCFCF;
+                    @include md {
+                     margin: 5px;       
+                    }
+                }
+                .description {
+                    position: relative;
+                    &::after {
+                        width: 120%;
+                        margin: 22px auto 38px -30px;
+                        @include md {
+                            margin: 5px auto 5px -15px;      
+                           }
+                        @include md {
+                            width: 100%;
+                            margin: 5px auto 5px auto;      
+                           }
+                    }
+
+                }
+                .time {
+                    text-align: center;
+                    &::after {
+                        width: 80%;
+                        margin: 12px auto 15px auto;
+                        @include md {
+                            margin: 5px auto 5px auto;    
+                           }
+                    }
+                }
+                .teacher {
+                    text-align: center;
+                    &::after {
+                        width: 90%;
+                        margin: 12px auto 60px auto;
+                        @include md {
+                            margin: 5px;       
+                           }
+                        
+                    }
+                }
+                
+
+                .button {
+                    padding: 15px 110px;
+                    border-radius: 30px;
+                }
+
+                @include lg {
+                    h3 {
+                        font-size: 25px;
+                    }
+                    .description {
+                        font-size: 16px;
+                    }
+                    .teacher.h3,
+                    .time.h3  {
+                        font-size: 18px;
+                    }
+                    .button {
+                        padding: 10px 50px;
+                    }
+                }
+
+                @include md {
+                    .button {
+                        padding: 5px 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+section.our-teachers {
+    padding-top: 67px;
+    h2 {
+        text-align: center;
+    }
+    .teachers-wrapper {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 30px;
+        row-gap: 60px;
+        @include md {
+            grid-template-columns: 1fr 1fr;
+
+        }
+
+        .teacher-info {
+            display: flex;
+            .img-wrapper {
+                width: 96px;
+                height: 96px;
+                border-radius: 50%;
+                overflow: hidden;
+                background-color: grey;
+                margin-right: 35px;
+            }
+            div {
+                align-self: center;
+                .job {
+                    color: $green-200;
+                }
+                .name {
+                    font-size: 30px;
+                }
+
+                @include lg {
+                    .job {
+                        font-size: 16px;
+                    }
+                    .name {
+                        font-size: 20px;
+                    }
+                
+                }
+            }
+
+        }
+    }
+}

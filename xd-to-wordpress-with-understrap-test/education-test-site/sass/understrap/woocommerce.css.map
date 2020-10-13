@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,0BAA0B,CAAC;EAC1B,KAAK,EAAE,IAAI;CACX;;AAGD,AAAA,MAAM,AAAA,qCAAqC,CAAC;EAC3C,SAAS,EAAE,kBAAkB;CAC7B;;AAGD,MAAM,EAAC,SAAS,EAAE,KAAK;EACtB,AAAA,YAAY,AAAA,WAAW,CAAC;IACvB,KAAK,EAAE,gBAAgB;GACvB",
+    "sources": [
+        "woocommerce.scss"
+    ],
+    "names": [],
+    "file": "woocommerce.css"
+}

@@ -1,0 +1,99 @@
+
+.site-header {
+    &.home-page-header {
+    height: 700px;
+    position: relative;
+    background-image: url('../img/header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            right: 0; bottom: 0;
+
+            background-color: #1A1A1A;
+            opacity: 0.9;
+        }
+
+        .navbar-nav {
+            .nav-link {
+                color: white;
+
+            }
+
+            
+        }
+
+        .home-page-title-wrapper {
+            display: block;
+            text-align: center;
+            position: relative;
+            margin-top: 205px;
+            @include md {
+                margin-top: 100px;
+            }
+            z-index: 1;
+            h1.home-title {
+                font-size: 72px;
+            }
+            .home-title-under {
+                font-size: 24px;
+                font-weight: 700;
+                font-family: 'Nunito Sans', sans-serif;
+            }
+            .button--primary {
+                margin-top: 45px;
+            }
+            .bullet-wrapper {
+                display: flex;
+                justify-content: center;
+                margin-top: 135px;
+                .bullet {
+                    width: 20px;
+                    height: 20px;
+                    border: 1px solid #ffffff;
+                    border-radius: 50%;
+                    margin-left: 10px;
+                    &:nth-child(2) {
+                        background-color: $green-200;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .site-logo {
+        margin-right: 10px;
+    }
+
+
+
+    .navbar-nav {
+                .nav-link {
+                font-family: 'Nunito Sans', sans-serif;
+                font-weight: 700;
+                font-size: 18px;
+                }
+        
+    }
+    .home-page-title-wrapper {
+        display: none;
+    }
+
+    button.navbar-toggler {
+        position: relative;
+        z-index: 200;
+    }
+
+    
+   .navbar-toggler {
+       width: 50px;
+       color:$green-200;
+    //    background-color: $green-200;
+        outline: none;
+   }
+}

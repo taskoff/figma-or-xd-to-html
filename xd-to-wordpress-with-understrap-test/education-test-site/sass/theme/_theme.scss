@@ -1,0 +1,37 @@
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito+Sans:wght@700&display=swap');
+@import './_breackpoints.scss';
+@import './_typography.scss';
+@import './_header.scss';
+@import './_button.scss';
+@import './_home-page.scss';
+
+
+
+
+
+
+.section-wrapper {
+    margin: 0 135px;
+    @include xl {
+        margin: 0 90px;
+    }
+    @include lg {
+        margin: 0 50px;
+    }
+    @include md {
+        margin: 0 20px;
+    }
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+

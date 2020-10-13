@@ -1,0 +1,11 @@
+.button {
+    border: none !important; 
+    outline: none !important;
+    background-color: #27AE61;
+    color: #FFFFFF;
+
+    &--primary {
+        padding: 15px 30px;
+        border-radius: 30px;
+    }
+}
