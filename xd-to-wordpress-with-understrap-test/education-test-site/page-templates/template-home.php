@@ -158,6 +158,8 @@ get_header();
             </div>
 
         </div>
+        <p class="bottom-link"><a href="">View All</a></p>
+
     </section>
     <section class="our-teachers">
         <h2>Our Teachers</h2>
@@ -241,6 +243,47 @@ get_header();
                 <div>
                     <p class="name h3">Nancee Bluford</p>
                     <p class="job h3">SEO Head</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="programs">
+        <h2>Programs</h2>
+        <div class="cards-wrapper section-wrapper">
+            <div class="card-wrapper first">
+                <div class="content">
+                    <h3>Pre-college education</h3>
+                    <p class="description">Broaden the creative horizons of your kids</p>
+                </div>
+            </div>
+            <div class="card-wrapper second">
+                <div class="content">
+                    <h3>Middle school</h3>
+                    <p class="description">Broaden the creative horizons of your kids</p>
+                </div>
+            </div>
+            <div class="card-wrapper third">
+                <div class="content">
+                    <h3>High school</h3>
+                    <p class="description">Preparing youngsters for the  adult life</p>
+                </div>
+            </div>
+            <div class="card-wrapper fourth">
+                <div class="content">
+                    <h3>International exchange</h3>
+                    <p class="description">Accepting students from abroad</p>
+                </div>
+            </div>
+            <div class="card-wrapper fifth">
+                <div class="content">
+                    <h3>Graduate programs</h3>
+                    <p class="description">Solidifying knowledge that was obtained through the long years of learning</p>
+                </div>
+            </div>
+            <div class="card-wrapper sixth">
+                <div class="content">
+                    <h3>Home education</h3>
+                    <p class="description">Providing robust distant education</p>
                 </div>
             </div>
         </div>
