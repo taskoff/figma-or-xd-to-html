@@ -252,6 +252,9 @@ section.our-teachers {
             grid-template-columns: 1fr 1fr;
 
         }
+        @include md {
+            grid-template-columns: 1fr;
+        }
 
         .teacher-info {
             display: flex;
@@ -316,6 +319,7 @@ section.programs {
             color: #ffff;
             position: relative;
             padding-top: 120px;
+            transition: opacity 0.3s linear;
             &::before {
                 content: '';
                 position: absolute;
@@ -362,6 +366,91 @@ section.programs {
             }
             background-size: cover;
             background-repeat: no-repeat;
+
+            &:hover::before {
+                opacity: 0.6;
+            }
+        }
+    }
+}
+
+section.testimonials {
+    padding: 75px 0;
+    h2 {
+        text-align: center;
+        // padding-top: 75px;
+    }
+    margin-top: 100px;
+    background-color: #F1F1F1;
+    .testimonials-wrapper {
+        width: 760px;
+        margin: auto;
+        position: relative;
+        @include lg {
+            width: 660px;
+        }
+        @include md {
+            width: 560px;
+        }
+        @include sm {
+            width: 450px;
+        }
+
+    }
+    .arrows {
+        .arrow {
+            position: absolute;
+            &.left {
+                left: -180px;
+                top: 35%;
+                @include xl{
+                    left: -50px;
+                }
+                @include lg{
+                    left: 0;
+                }
+                
+            }
+            &.right {
+                right: -180px;
+                top: 35%;
+                @include xl{
+                    right: -50px;
+                }
+                @include lg{
+                    right: 0;
+                }
+               
+            }
+        }
+    }
+    .images-wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 45px;
+
+        @include md {
+            justify-content: space-around;
+        }
+
+        .img-wrapper {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background-color: grey;
+        }
+    }
+    .testimonial-wrapper {
+        text-align: center;
+        padding: 65px 100px 0 100px;
+        font-size: 18px;
+        .name {
+            margin-top: 60px;
+            font-size: 30px;
+        }
+        p.job {
+            opacity: 0.8;
         }
     }
 }

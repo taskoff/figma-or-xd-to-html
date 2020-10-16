@@ -251,10 +251,10 @@ get_header();
         <h2>Programs</h2>
         <div class="cards-wrapper section-wrapper">
             <div class="card-wrapper first">
-                <div class="content">
-                    <h3>Pre-college education</h3>
-                    <p class="description">Broaden the creative horizons of your kids</p>
-                </div>
+                    <div class="content">
+                        <h3>Pre-college education</h3>
+                        <p class="description">Broaden the creative horizons of your kids</p>
+                    </div>
             </div>
             <div class="card-wrapper second">
                 <div class="content">
@@ -285,6 +285,56 @@ get_header();
                     <h3>Home education</h3>
                     <p class="description">Providing robust distant education</p>
                 </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials">
+        <h2>What client say</h2>
+        <div class="testimonials-wrapper">
+            <div class="arrows">
+                <div class="left arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="44" viewBox="0 0 24 44">
+                        <defs>
+                          <pattern id="pattern" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 24 44">
+                            <image width="24" height="44" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAsCAYAAAB/nHhDAAABgklEQVRYha3Wu07DQBCF4Q+ccAkISIdoA+L9XweoaAkSV9EghcJZ2Jh14vXuaWy5OP/OmRnbDU5xi2O8qqwGlzjDDAe1IQ0+cI7pGnKEl5qAFZ5xsYYcq1hJs752IdXiaqL7FZYdSHFcTeJZN66pgkpSgBBXaPwJDo2sJAUIkCXmCuPqAwQVT9cuQDeumcy4dgFiyBwTmSM8BBDU3ZNB05UD6C7jiQGNzwEESJiuiQGNzwUELW02vhcyFsD/niTjKgF0Icm4SgGpF+TGnpQCguLGb0BqAej5ntQErPDkbz9m2N+vCAj6ju6nk8rmC21MtD8Tj3sVza+1ywfvuINaES0i849gDjUqiGP5PXktwI32rzBpTllEi13mjK8g2dCUxlQQm280NKXcPYinZevJg3IiGhxLrKERxSf/HGrOsAq2znkpYFQssbZF1Lv+OeqrII7lDfdjzEmPaXf9R5vzP6J4/UfHEiuOqGha+hQiylr/XMCVwlHcBfjSfqg/8VDTHH4AM/FhwJk4tu0AAAAASUVORK5CYII="/>
+                          </pattern>
+                        </defs>
+                        <rect id="arrow_right" width="24" height="44" transform="translate(24 44) rotate(180)" fill="url(#pattern)"/>
+                    </svg>
+                </div>
+                <div class="right arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="44" viewBox="0 0 24 44">
+                        <defs>
+                          <pattern id="pattern" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 24 44">
+                            <image width="24" height="44" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAsCAYAAAB/nHhDAAABgklEQVRYha3Wu07DQBCF4Q+ccAkISIdoA+L9XweoaAkSV9EghcJZ2Jh14vXuaWy5OP/OmRnbDU5xi2O8qqwGlzjDDAe1IQ0+cI7pGnKEl5qAFZ5xsYYcq1hJs752IdXiaqL7FZYdSHFcTeJZN66pgkpSgBBXaPwJDo2sJAUIkCXmCuPqAwQVT9cuQDeumcy4dgFiyBwTmSM8BBDU3ZNB05UD6C7jiQGNzwEESJiuiQGNzwUELW02vhcyFsD/niTjKgF0Icm4SgGpF+TGnpQCguLGb0BqAej5ntQErPDkbz9m2N+vCAj6ju6nk8rmC21MtD8Tj3sVza+1ywfvuINaES0i849gDjUqiGP5PXktwI32rzBpTllEi13mjK8g2dCUxlQQm280NKXcPYinZevJg3IiGhxLrKERxSf/HGrOsAq2znkpYFQssbZF1Lv+OeqrII7lDfdjzEmPaXf9R5vzP6J4/UfHEiuOqGha+hQiylr/XMCVwlHcBfjSfqg/8VDTHH4AM/FhwJk4tu0AAAAASUVORK5CYII="/>
+                          </pattern>
+                        </defs>
+                        <rect id="arrow_right" width="24" height="44" fill="url(#pattern)"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="images-wrapper">
+                <div class="img-wrapper">
+                    <img src="" alt="">
+                </div>
+                <div class="img-wrapper">
+                    <img src="" alt="">
+                </div>
+                <div class="img-wrapper">
+                    <img src="" alt="">
+                </div>
+                <div class="img-wrapper">
+                    <img src="" alt="">
+                </div>
+                <div class="img-wrapper">
+                    <img src="" alt="">
+                </div>
+
+            </div>
+            <div class="testimonial-wrapper">
+                <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                <h3 class="name">John Doe</h3>
+                <p class="job h4">CEO Smart Edu</p>
             </div>
         </div>
     </section>
