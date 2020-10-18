@@ -13,7 +13,7 @@ defined( 'ABSPATH' ) || exit;
 get_header();
 ?>
 <div class="home-page-wrapper">
-    <section class="educations">
+    <section class="educations" id="educations">
        <div class="education-box">
         <div class="img-wrapper">
             <img src="<?php echo get_template_directory_uri() . '../img/education-img.jpg'?>" alt="">
@@ -111,7 +111,7 @@ get_header();
             </div>
         </div>
     </section>
-    <section class="courses">
+    <section class="courses" id="courses">
         <h2>Courses</h2>
         <div class="card-wrapper section-wrapper">
             <div class="card-course">
@@ -161,7 +161,7 @@ get_header();
         <p class="bottom-link"><a href="">View All</a></p>
 
     </section>
-    <section class="our-teachers">
+    <section class="our-teachers" id="teachers">
         <h2>Our Teachers</h2>
         <div class="section-wrapper teachers-wrapper">
             <div class="teacher-info">
@@ -247,7 +247,7 @@ get_header();
             </div>
         </div>
     </section>
-    <section class="programs">
+    <section class="programs" id="programs">
         <h2>Programs</h2>
         <div class="cards-wrapper section-wrapper">
             <div class="card-wrapper first">

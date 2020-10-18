@@ -12,7 +12,7 @@ defined( 'ABSPATH' ) || exit;
 
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
-<div class="section-footer">
+<div class="section-footer" id="contacts">
         <h2>Contact</h2>
         <div class="footer-section-wrapper">
             <form class="footer-contact-form" action="">

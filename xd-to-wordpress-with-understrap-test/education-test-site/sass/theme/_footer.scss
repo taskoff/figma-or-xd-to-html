@@ -30,6 +30,9 @@
             grid-template-columns: 1fr 1fr 1fr;
             column-gap: 30px;
             padding-top: 30px;
+            .text {
+                margin-top: 15px;
+            }
         }
 
         @include xl {
@@ -52,7 +55,7 @@
 .bottom-footer-menu-wrapper {
     height: 100px;
     background-color: #1A1A1A;
-    color: #ffffff;
+    color: $white;
     display: flex;
     align-items: center;
     justify-content: space-between;
