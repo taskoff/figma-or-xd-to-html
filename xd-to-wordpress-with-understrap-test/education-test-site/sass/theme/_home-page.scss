@@ -555,15 +555,16 @@ section.blog {
     }
 }
 section.subscribe {
-    height: 200px;
+    min-height: 200px;
     background-image: url('../img/subscribe-bg.jpg');
-    background-size: contain;
+    background-size: cover;
     margin-top: 80px;
     background-repeat: no-repeat;
     .subscribe-wrapper {
-        height: 100%;
+        min-height: 200px;
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         align-items: center;
         color: #ffff;
         .h3 {
@@ -581,6 +582,19 @@ section.subscribe {
         .button {
             padding: 20px 60px;
             margin-top: 10px;
+        }
+    }
+    @include md {
+        .subscribe-wrapper {
+            justify-content: start;
+            align-items: flex-end;
+            padding-top: 20px;
+            .h3 {
+                font-size: 24px;
+            }
+            input {
+                margin: 0;
+            }
         }
     }
 }
