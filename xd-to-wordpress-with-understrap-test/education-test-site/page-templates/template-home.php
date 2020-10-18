@@ -414,7 +414,14 @@ get_header();
             </div>
         </div>
         <div class="btn-wrapper center">
-            <button class="button h4">Read more</button>
+            <button class="button h4 button--secondary">Read more</button>
+        </div>
+    </section>
+    <section class="subscribe">
+        <div class="section-wrapper subscribe-wrapper">
+            <p class="h3">Subscribe to our newsletter</p>
+            <input type="text">
+            <button class="button button--secondary h4">Sign Up</button>
         </div>
     </section>
 </div>
