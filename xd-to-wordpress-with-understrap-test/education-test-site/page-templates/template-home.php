@@ -315,19 +315,19 @@ get_header();
             </div>
             <div class="images-wrapper">
                 <div class="img-wrapper">
-                    <img src="" alt="">
+                    <img src="<?php echo get_template_directory_uri() . '../img/message-1.jpg'?>" alt="message-1">
                 </div>
                 <div class="img-wrapper">
-                    <img src="" alt="">
+                    <img src="<?php echo get_template_directory_uri() . '../img/message-2.jpg'?>" alt="message-2">
+                </div>
+                <div class="img-wrapper active">
+                    <img src="<?php echo get_template_directory_uri() . '../img/message-3.jpg'?>" alt="message-3">
                 </div>
                 <div class="img-wrapper">
-                    <img src="" alt="">
+                    <img src="<?php echo get_template_directory_uri() . '../img/message-4.jpg'?>" alt="message-4">
                 </div>
                 <div class="img-wrapper">
-                    <img src="" alt="">
-                </div>
-                <div class="img-wrapper">
-                    <img src="" alt="">
+                    <img src="<?php echo get_template_directory_uri() . '../img/message-5.jpg'?>" alt="message-5">
                 </div>
 
             </div>
@@ -338,6 +338,86 @@ get_header();
             </div>
         </div>
     </section>
+    <section class="blog">
+        <header>
+            <h2>Blog</h2>
+        </header>
+        <div class="blog-wrapper-container">
+            <div class="blog-wrapper">
+                <div class="blog-card">
+                    <div class="img-wrapper">
+                        <img src="<?php echo get_template_directory_uri() . '../img/blog-img-1.jpg'?>" alt="">
+                    </div>
+                    <header>
+                        <h4 class="blog-title">Education with technologies</h4>
+                    </header>
+                    <div class="card-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiu mod tempor incididunt ut labore et</p>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="img-wrapper">
+                        <img src="<?php echo get_template_directory_uri() . '../img/blog-img-2.jpg'?>" alt="">
+                    </div>
+                    <header>
+                        <h4 class="blog-title">How to use music in education</h4>
+                    </header>
+                    <div class="card-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiu mod tempor incididunt ut labore et</p>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="img-wrapper">
+                        <img src="<?php echo get_template_directory_uri() . '../img/blog-img-3.jpg'?>" alt="blog-img">
+                    </div>
+                    <header>
+                        <h4 class="blog-title">Education with technologies</h4>
+                    </header>
+                    <div class="card-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiu mod tempor incididunt ut labore et</p>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="img-wrapper">
+                        <img src="<?php echo get_template_directory_uri() . '../img/blog-img-4.jpg'?>" alt="">
+                    </div>
+                    <header>
+                        <h4 class="blog-title">Turning goals into reality</h4>
+                    </header>
+                    <div class="card-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiu mod tempor incididunt ut labore et</p>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="img-wrapper">
+                        <img src="<?php echo get_template_directory_uri() . '../img/blog-img-5.jpg'?>" alt="">
+                    </div>
+                    <header>
+                        <h4 class="blog-title">The nation into education</h4>
+                    </header>
+                    <div class="card-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiu mod tempor incididunt ut labore et</p>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="img-wrapper">
+                        <img src="<?php echo get_template_directory_uri() . '../img/blog-img-6.jpg'?>" alt="">
+                    </div>
+                    <header>
+                        <h4 class="blog-title">Gamification and learning</h4>
+                    </header>
+                    <div class="card-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiu mod tempor incididunt ut labore et</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="btn-wrapper center">
+            <button class="button h4">Read more</button>
+        </div>
+    </section>
 </div>
+
  
 <?php get_footer();
