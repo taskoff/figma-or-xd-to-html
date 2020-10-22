@@ -1,5 +1,14 @@
 section.educations {
     margin: 65px 150px 60px 150px;
+    @include sm {
+        margin: 10px;
+    }
+    @include md{
+        margin: 30px;
+    }
+    @include lg {
+        margin: 30px  80px 30px 80px;
+    }
     @include md{
         margin: 30px;
     }
@@ -39,6 +48,9 @@ section.educations {
                 display: grid;
                 grid-template-columns: 60% 40%;
                 max-width: 100%;
+            }
+            @include sm {
+                display: block;
             }
             h3 {
                 font-size: 36px;
@@ -89,8 +101,12 @@ section.features {
         column-gap: 30px;
         row-gap: 60px;
         margin-top: 45px;
+        
         @include lg {
             grid-template-columns: 1fr 1fr;
+        }
+        @include md {
+            grid-template-columns: 1fr;
         }
 
         .card-features {
@@ -101,6 +117,10 @@ section.features {
                 height: 170px;
                 border-radius: 50%;
                 margin: auto;
+                // @include sm {
+                //     width: 100px;
+                //     height: 100px;
+                // }
             }
             h3 {
                 margin-top: 12px;
@@ -393,7 +413,7 @@ section.testimonials {
             width: 560px;
         }
         @include sm {
-            width: 450px;
+            width: 100%;
         }
 
     }
@@ -440,6 +460,7 @@ section.testimonials {
             border-radius: 50%;
             position: relative;
             overflow: hidden;
+
             &::before {
                 content: '';
                 position: absolute;

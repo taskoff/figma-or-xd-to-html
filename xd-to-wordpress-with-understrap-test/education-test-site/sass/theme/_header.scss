@@ -32,9 +32,7 @@
             text-align: center;
             position: relative;
             margin-top: 205px;
-            @include md {
-                margin-top: 100px;
-            }
+            
             z-index: 1;
             h1.home-title {
                 font-size: 72px;
@@ -60,6 +58,12 @@
                     &:nth-child(2) {
                         background-color: $green-200;
                     }
+                }
+            }
+            @include md {
+                margin-top: 100px;
+                h1.home-title {
+                    font-size: 60px;
                 }
             }
 
