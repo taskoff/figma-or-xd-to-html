@@ -36,6 +36,14 @@
     grid-template-rows: 64px 300px 85px 215px;
     grid-template-columns: 560px 350px 190px 50px;
 
+    @include xl {
+        grid-template-rows: 40px 230px 85px 215px;
+        grid-template-columns: 510px 270px 190px 50px;
+    }
+    @include lg {
+        grid-template-rows: 40px 200px 70px 215px;
+        grid-template-columns: 470px 230px 170px 50px;
+    }
     
 
     .img-wrapper-first {
@@ -75,7 +83,7 @@
         font-size: 15px;
     }
 
-    @include sm {
+    @include md {
         grid-template-columns: 33% 33% 33%;
         grid-template-rows: unset;
         position: relative;

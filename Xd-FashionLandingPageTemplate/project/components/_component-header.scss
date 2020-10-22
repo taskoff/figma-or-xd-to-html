@@ -5,15 +5,17 @@
         grid-template-columns: 1fr 1fr 1fr;
         // max-width: 1240px;
         margin: 23px 130px 22px 222px;
-        @include sm {
+        @include md {
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
             margin: 10px;
         }
         
 
         .primary-navigation {
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
             
             &-link {
@@ -26,8 +28,11 @@
                 margin-right: 10px;
             }
 
-            @include sm {
-                display: none;
+            @include md {
+                // display: none;
+            order: 2;
+            margin-top: 10px;
+
             }
         }
         

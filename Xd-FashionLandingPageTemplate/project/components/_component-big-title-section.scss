@@ -16,9 +16,18 @@
         padding-left: 15%;
         padding-top: 25%;
     }
+    @include xl {
+        
+        &.first {
+            padding-left: 50%;
+        }
+    }
 
-    @include sm {
+    @include md {
         height: 100%;
+        &.first {
+            padding-left: 10%;
+        }
     }
 }
 

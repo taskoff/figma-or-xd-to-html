@@ -78,7 +78,7 @@
                 margin-bottom: 15px;
             }
         }
-        @include sm {
+        @include md {
             display: block;
             .logo-text,
             .email-input,
