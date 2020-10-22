@@ -28,6 +28,9 @@
             }
         }
     }
+    @include md {
+        display: none;
+    }
 }
 
 .middle-navi {
@@ -41,7 +44,7 @@
         display: flex;
         @include md {
             
-            justify-content: space-between;
+            justify-content: space-around;
         }
         @include lg {
             flex-wrap: wrap;
@@ -122,6 +125,7 @@
     
     background-color: $blue-800;
     .main-navi-menu {
+        flex-wrap: wrap;
         position: relative;
         height: 80px;
         justify-content: space-between;
@@ -151,7 +155,7 @@
         border-radius: 3px;
     }
 
-    @include sm {
+    @include md {
         .nav-toggle-button {
             display: block;
             .close {
@@ -160,7 +164,9 @@
         }
         .main-navigation {
             position: absolute;
-            transform: translate(-105%, -100%);
+            top: 0;
+            left: 0;
+            transform: translateX(-105%);
 
             transition: transform 0.5s linear;
             background-color: black;
@@ -183,7 +189,7 @@
             display: none;
         }
         .nav-toggle:checked+.main-navigation{
-            transform: translate(0, -100%);
+            transform: translateY(0);
             
             
             .nav-toggle-button{

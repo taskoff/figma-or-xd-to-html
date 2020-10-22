@@ -111,6 +111,7 @@
             &-navi {
                 padding: 68px 0;
                 &-menu {
+                    flex-wrap: wrap;
                     justify-content: space-between;
                     font-weight: 700;
                     @include sm {
@@ -131,6 +132,13 @@
                             position: absolute;
                             top: 200%;
                             left: 0;
+                           
+                        }
+                        @include sm {
+                            margin-bottom: 10px;
+                            &::before {
+                            top: 100%;
+                            }
                         }
                     }
                 }
@@ -165,6 +173,10 @@
         @include md {
             grid-template-columns: 1fr 1fr;
         }
+        @include sm {
+            grid-template-columns: 1fr;
+        }
+        
         column-gap: 30px;
         row-gap: 30px;
     }
@@ -206,6 +218,9 @@
             padding: 30px 90px 0 90px;
             text-align: justify;
             line-height: 19px;
+            @include sm {
+                padding: 30px 0 0 0;
+            }
         }
         .left-arrow,
         .right-arrow {
@@ -214,10 +229,16 @@
         .left-arrow {
             left: 193px;
             top: 50%;
+            @include sm {
+                left: 30px;;
+            }
         }
         .right-arrow {
             right: 193px;
             top: 50%;
+            @include sm {
+                right: 30px;
+            }
         }
 
         .left-arrow,
@@ -261,6 +282,9 @@
 
             .text-text {
                 margin-right: 170px;
+                @include sm {
+                    margin-right: auto;
+                }
                 color: $white-100;
                 .first-row {
                     font-size: 24px;
@@ -306,6 +330,11 @@
                 grid-template-columns: 1fr 1fr;
                 row-gap: 30px;
             }
+            @include sm {
+                grid-template-columns: 1fr;
+                row-gap: 30px;
+                
+            }
 
             .card-wrapper {
                 height: 250px;
@@ -349,6 +378,10 @@
                 }
                 &.fourth {
                     background-image: url('../assets/img/active-4.png');
+                }
+
+                @include sm {
+                    justify-self: center;
                 }
             }
         }

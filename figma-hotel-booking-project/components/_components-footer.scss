@@ -1,7 +1,8 @@
 .site-footer-wrapper {
     // min-height: 900px;
     background-color: $blue-800;
-    color: $white-100;
+    // color: $white-100;
+    color: black;
     font-size: 12px;
     position: relative;
     a,
@@ -28,10 +29,14 @@
             grid-template-columns: 1fr;
             margin: 0 130px;
         }
+        @include sm {
+            grid-template-columns: 1fr;
+            margin: 0 10px;
+        }
         row-gap: 100px;
         .first-part {
             display: flex;
-           
+           flex-wrap: wrap;
             .site-logo {
                 max-width: 160px;
                 font-size: 64px;
@@ -49,7 +54,7 @@
         .second-part {
             display: flex;
             justify-content: space-between;
-
+            flex-wrap: wrap;
             .social {
                 display: flex;
                 padding-top: 25px;
@@ -84,6 +89,9 @@
             .input-wrapper {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
+                @include sm {
+                    grid-template-columns: 1fr;
+                }
                 
                 column-gap: 30px;
                 row-gap: 15px;
@@ -91,6 +99,7 @@
                     line-height: 50px;
                     border-radius: 4px;
                     padding-left: 20px;
+                    
                 }
                 textarea {
                     padding: 20px;
@@ -98,6 +107,10 @@
                     grid-column-end: 3;
                     height: 120px;
                     border-radius: 4px;
+                    @include sm {
+                        grid-column-start: 1;
+                        grid-column-end: 2;
+                    }
                 }
             }
             .button-wrapper {
